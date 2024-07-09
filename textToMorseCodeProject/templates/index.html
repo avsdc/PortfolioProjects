@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <center><title>Text To Morse Code Converter</title></center>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+</head>
+<body>
+<center><h1>Text To Morse Code Converter</h1></center>
+    <center><form method="post" id="a-form" action="/"  enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        <center><textarea align="center" id="input_text" name="input" rows="4" cols="50">TextArea</textarea></center>
+        <label>Input Form</label>
+        <center><textarea id="output_text" name="output" rows="4" cols="50">{{ data }}</textarea></center>
+        <label>Output Form</label>
+        <center><input type="submit" value="Submit"/></center>
+
+    </form></center>
+</body>
+</html>
